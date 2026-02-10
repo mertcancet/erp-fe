@@ -44,6 +44,13 @@ export default function DashboardLayout({
             <span className="text-sm font-medium">Raporlar</span>
           </Link>
           <Link
+            href="/dashboard/production-orders/1"
+            className="flex items-center gap-3 px-3 py-2 text-slate-600 hover:bg-slate-200/50 rounded-lg transition-colors group"
+          >
+            <span className="material-symbols-outlined">assignment_turned_in</span>
+            <span className="text-sm font-medium">Üretim Emirleri</span>
+          </Link>
+          <Link
             href="#"
             className="flex items-center gap-3 px-3 py-2 text-slate-600 hover:bg-slate-200/50 rounded-lg transition-colors group"
           >
