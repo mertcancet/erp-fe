@@ -67,12 +67,14 @@ export default function KaynaklarPage() {
               Yeni İş Gücü Ekle
             </button>
           </Link>
-          <button className="flex items-center gap-2 px-3 py-1.5 bg-primary text-white text-xs font-bold rounded-lg hover:bg-primary/90 transition-all shadow-sm">
-            <span className="material-symbols-outlined text-[18px]">
-              add_circle
-            </span>
-            Yeni Makine Ekle
-          </button>
+          <Link href="/dashboard/resources/add-machine">
+            <button className="flex items-center gap-2 px-3 py-1.5 bg-primary text-white text-xs font-bold rounded-lg hover:bg-primary/90 transition-all shadow-sm">
+              <span className="material-symbols-outlined text-[18px]">
+                add_circle
+              </span>
+              Yeni Makine Ekle
+            </button>
+          </Link>
           <div className="h-6 w-px bg-slate-200 mx-1"></div>
           <button className="w-9 h-9 flex items-center justify-center rounded-lg text-slate-500 hover:bg-slate-50 transition-colors">
             <span className="material-symbols-outlined text-[22px]">
