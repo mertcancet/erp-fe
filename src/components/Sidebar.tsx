@@ -28,10 +28,28 @@ export default function Sidebar() {
       match: (p: string) => p === "/dashboard",
     },
     {
-      href: "/dashboard/bom",
+      href: "/dashboard/production-orders/1",
+      icon: "assignment_turned_in",
+      label: "Üretim Emirleri",
+      match: (p: string) => p.startsWith("/dashboard/production-orders"),
+    },
+    {
+      href: "/dashboard/inventory",
       icon: "inventory_2",
+      label: "Stok & Envanter",
+      match: (p: string) => p.startsWith("/dashboard/inventory"),
+    },
+    {
+      href: "/dashboard/bom",
+      icon: "component_exchange",
       label: "Ürünler & Reçeteler",
       match: (p: string) => p.startsWith("/dashboard/bom"),
+    },
+    {
+      href: "/dashboard/resources",
+      icon: "precision_manufacturing",
+      label: "Kaynaklar",
+      match: (p: string) => p.startsWith("/dashboard/resources"),
     },
     {
       href: "/dashboard/reports",
@@ -40,10 +58,10 @@ export default function Sidebar() {
       match: (p: string) => p.startsWith("/dashboard/reports"),
     },
     {
-      href: "/dashboard/production-orders/1",
-      icon: "assignment_turned_in",
-      label: "Üretim Emirleri",
-      match: (p: string) => p.startsWith("/dashboard/production-orders"),
+      href: "/dashboard/settings",
+      icon: "settings",
+      label: "Ayarlar",
+      match: (p: string) => p.startsWith("/dashboard/settings"),
     },
   ];
 
