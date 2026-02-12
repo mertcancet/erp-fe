@@ -2,11 +2,11 @@ export default function DashboardPage() {
   return (
     <div className="flex-1 flex flex-col min-h-screen">
       {/* Top Bar / Header */}
-      <header className="h-20 border-b border-slate-100 bg-white/80 backdrop-blur-md sticky top-0 z-10 flex items-center justify-between px-8">
-        <div className="flex items-center gap-8">
-          <div className="hidden md:flex items-center gap-3">
+      <header className="min-h-[5rem] py-4 border-b border-slate-100 bg-white/80 backdrop-blur-md sticky top-0 z-10 flex flex-col sm:flex-row items-center justify-between px-4 md:px-8 gap-4 pl-16 md:pl-8">
+        <div className="flex items-center gap-8 w-full sm:w-auto overflow-x-auto no-scrollbar">
+          <div className="flex items-center gap-3 shrink-0">
             <div className="relative">
-              <button className="flex items-center gap-2 px-3 py-1.5 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg text-sm font-medium">
+              <button className="flex items-center gap-2 px-3 py-1.5 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg text-sm font-medium whitespace-nowrap">
                 <span className="material-symbols-outlined text-primary text-lg">
                   location_on
                 </span>
@@ -16,8 +16,8 @@ export default function DashboardPage() {
                 </span>
               </button>
             </div>
-            <div className="h-6 w-px bg-slate-200 dark:bg-slate-700"></div>
-            <div className="flex items-center gap-2 text-sm text-slate-500 font-medium">
+            <div className="h-6 w-px bg-slate-200 dark:bg-slate-700 hidden sm:block"></div>
+            <div className="flex items-center gap-2 text-sm text-slate-500 font-medium whitespace-nowrap">
               <span className="material-symbols-outlined text-lg">
                 calendar_today
               </span>
@@ -25,13 +25,15 @@ export default function DashboardPage() {
             </div>
           </div>
         </div>
-        <div className="flex items-center gap-4">
-          <button className="p-2 text-slate-400 hover:text-primary transition-colors relative">
-            <span className="material-symbols-outlined">notifications</span>
-            <span className="absolute top-2 right-2 w-2 h-2 bg-red-500 rounded-full border-2 border-white dark:border-slate-900"></span>
-          </button>
-          <div className="h-8 w-px bg-slate-200 dark:bg-slate-700"></div>
-          <button className="bg-primary hover:bg-primary/90 text-white px-4 py-2 rounded-lg text-sm font-bold flex items-center gap-2 transition-all shadow-lg shadow-primary/10">
+        <div className="flex items-center gap-4 w-full sm:w-auto justify-between sm:justify-end">
+          <div className="flex items-center gap-4">
+            <button className="p-2 text-slate-400 hover:text-primary transition-colors relative">
+              <span className="material-symbols-outlined">notifications</span>
+              <span className="absolute top-2 right-2 w-2 h-2 bg-red-500 rounded-full border-2 border-white dark:border-slate-900"></span>
+            </button>
+            <div className="h-8 w-px bg-slate-200 dark:bg-slate-700"></div>
+          </div>
+          <button className="bg-primary hover:bg-primary/90 text-white px-4 py-2 rounded-lg text-sm font-bold flex items-center gap-2 transition-all shadow-lg shadow-primary/10 whitespace-nowrap">
             <span className="material-symbols-outlined text-sm">add</span>
             Yeni Plan Oluştur
           </button>

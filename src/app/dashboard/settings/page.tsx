@@ -13,15 +13,15 @@ export default function SettingsPage() {
   return (
     <div className="flex flex-col min-h-screen bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100">
       {/* Header */}
-      <header className="sticky top-0 z-50 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 px-6 py-3 flex items-center justify-between">
-        <div className="flex items-center gap-8">
-          <div className="flex items-center gap-3">
-            <div className="bg-primary p-1.5 rounded-lg text-white">
-              <span className="material-symbols-outlined text-2xl">
+      <header className="sticky top-0 z-50 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 px-4 md:px-6 py-3 flex items-center justify-between pl-16 md:pl-6">
+        <div className="flex items-center gap-8 overflow-hidden">
+          <div className="flex items-center gap-3 shrink-0">
+            <div className="bg-primary p-1.5 rounded-lg text-white shrink-0">
+              <span className="material-symbols-outlined text-xl md:text-2xl">
                 settings_input_component
               </span>
             </div>
-            <h1 className="text-xl font-extrabold tracking-tight text-slate-900 dark:text-white">
+            <h1 className="text-lg md:text-xl font-extrabold tracking-tight text-slate-900 dark:text-white truncate">
               Üretim Planlama Motoru
             </h1>
           </div>
@@ -58,7 +58,7 @@ export default function SettingsPage() {
             </a>
           </nav>
         </div>
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-2 md:gap-4 shrink-0">
           <div className="relative hidden lg:block">
             <span className="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-xl">
               search
@@ -73,11 +73,11 @@ export default function SettingsPage() {
             <span className="material-symbols-outlined">notifications</span>
             <span className="absolute top-2 right-2 w-2 h-2 bg-red-500 rounded-full border-2 border-white dark:border-slate-900"></span>
           </button>
-          <div className="h-8 w-px bg-slate-200 dark:bg-slate-700"></div>
-          <div className="flex items-center gap-3 cursor-pointer group">
+          <div className="h-8 w-px bg-slate-200 dark:bg-slate-700 hidden sm:block"></div>
+          <div className="flex items-center gap-3 cursor-pointer group shrink-0">
             <img
               alt="Profil"
-              className="w-10 h-10 rounded-full object-cover border border-slate-200"
+              className="w-8 h-8 md:w-10 md:h-10 rounded-full object-cover border border-slate-200"
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuEB2NPQbPe7-6Bpg3RY7iMdvyabtvNN7dfaiSigU_l9ddSMxovr-VQdl9m8N6dylnlXGw8JwMrFHcpWYKJ58ZqOQw2_pYjfwBZpl1xKczb8d70O7n3UwPPjLgGXndaSLCYekn89yOhaeghyWQRi9XSWsCQoTqv70T4NDlZ8_UWb90vWBDfwl7augTKlYcoQoMClafc54voz4lisqcw0In26EnendhxM2hm2pqhURHQV6nB9wPf--QeTuAd3mfiQGFBDM8ResyhJQ"
             />
             <div className="hidden sm:block">
