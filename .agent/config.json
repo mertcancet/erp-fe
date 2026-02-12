@@ -47,5 +47,137 @@
     "strict": true,
     "no_any": true,
     "prefer_interfaces": true
+  },
+
+  "design_system": {
+    "theme": "light",
+    "dark_mode_supported": true,
+
+    "colors": {
+      "primary": "#135BEC",
+      "primary_foreground": "#FFFFFF",
+
+      "background": "#FFFFFF",
+      "foreground": "#0F172A",
+
+      "card": "#FFFFFF",
+      "muted": "#F1F5F9",
+      "muted_foreground": "#64748B",
+
+      "border": "#E2E8F0",
+      "accent": "#F8FAFC",
+
+      "sidebar": "#FFFFFF",
+      "sidebar_border": "#E2E8F0",
+      "sidebar_foreground": "#0F172A",
+      "sidebar_accent": "#EEF2FF",
+
+      "success": "#10B981",
+      "warning": "#F59E0B",
+      "danger": "#EF4444"
+    },
+
+    "typography": {
+      "font_family": "Manrope",
+      "headings": {
+        "h1": { "size": "36px", "weight": 800 },
+        "h2": { "size": "30px", "weight": 700 },
+        "h3": { "size": "24px", "weight": 700 },
+        "h4": { "size": "20px", "weight": 600 }
+      },
+      "body": {
+        "base": { "size": "16px", "weight": 400 },
+        "small": { "size": "14px", "weight": 500 }
+      },
+      "caption": {
+        "size": "12px",
+        "weight": 700,
+        "uppercase": true
+      }
+    }
+  },
+
+  "component_rules": {
+    "buttons": {
+      "border_radius": "lg",
+      "font_weight": "bold",
+      "primary_style": "filled",
+      "secondary_style": "outline",
+      "hover_required": true,
+      "shadow_primary": true
+    },
+
+    "inputs": {
+      "icon_support": true,
+      "focus_ring": "primary",
+      "border_radius": "lg",
+      "placeholder_muted": true
+    },
+
+    "badges": {
+      "uppercase": true,
+      "rounded": "full",
+      "font_weight": "bold",
+      "status_colors": {
+        "success": "emerald",
+        "info": "blue",
+        "warning": "amber",
+        "danger": "red"
+      }
+    },
+
+    "cards": {
+      "bordered": true,
+      "rounded": "xl",
+      "padding": "lg",
+      "shadow": false
+    }
+  },
+
+  "layout_guidelines": {
+    "responsive": {
+      "mobile_first": true,
+      "breakpoints": ["sm", "md", "lg", "xl"],
+      "avoid_fixed_width": true
+    },
+
+    "sidebar": {
+      "desktop_only": true,
+      "sticky": true,
+      "width": "16rem"
+    },
+
+    "grid": {
+      "prefer_grid_flex": true,
+      "gap_consistent": true
+    }
+  },
+
+  "iconography": {
+    "icon_set": "material-symbols-outlined",
+    "size_default": "20px",
+    "usage": "semantic_only"
+  },
+
+  "coding_standards": {
+    "framework": "nextjs",
+    "language": "typescript",
+
+    "react": {
+      "functional_components_only": true,
+      "hooks_only": true
+    },
+
+    "css": {
+      "tailwind_only": true,
+      "no_inline_styles": true,
+      "prefer_semantic_tokens": true
+    },
+
+    "accessibility": {
+      "semantic_html": true,
+      "aria_when_needed": true,
+      "keyboard_navigation": true
+    }
   }
 }

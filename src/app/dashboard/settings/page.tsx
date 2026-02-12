@@ -1,12 +1,12 @@
 "use client";
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { SettingsHeader } from "./_components/SettingsHeader";
-import { SettingsTabs } from "./_components/SettingsTabs";
-import { GeneralSection } from "./_components/GeneralSection";
-import { PlanningSection } from "./_components/PlanningSection";
-import { PreferencesSection } from "./_components/PreferencesSection";
-import { ProfileSidebar } from "./_components/ProfileSidebar";
+import { SettingsHeader } from "./_components/settings-header";
+import { SettingsTabs } from "./_components/settings-tabs";
+import { GeneralSection } from "./_components/general-section";
+import { PlanningSection } from "./_components/planning-section";
+import { PreferencesSection } from "./_components/preferences-section";
+import { ProfileSidebar } from "./_components/profile-sidebar";
 
 export default function SettingsPage() {
   const [tab, setTab] = React.useState("genel");
