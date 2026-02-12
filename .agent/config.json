@@ -179,5 +179,31 @@
       "aria_when_needed": true,
       "keyboard_navigation": true
     }
+  },
+
+   "component_decomposition": {
+    "enabled": true,
+    "default_behavior": "decompose",
+
+    "rules": {
+      "max_lines_per_component": 200,
+      "extract_repeated_blocks": true,
+      "extract_layout_components": true,
+      "extract_ui_primitives": true,
+      "extract_sections": true
+    },
+
+    "output": {
+      "include_folder_structure": true,
+      "include_file_names": true,
+      "include_exports": true,
+      "preserve_props_typing": true
+    },
+
+    "naming": {
+      "components": "PascalCase",
+      "hooks": "camelCase",
+      "files": "kebab-case"
+    }
   }
 }
