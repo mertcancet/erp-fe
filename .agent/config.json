@@ -1,5 +1,51 @@
 {
   "naming_conventions": {
-    "components": "kebab-case"
+    "components": "kebab-case",
+    "hooks": "camelCase",
+    "variables": "camelCase"
+  },
+
+  "coding_guidelines": {
+    "responsive": {
+      "required": true,
+      "mobile_first": true,
+      "breakpoints": ["sm", "md", "lg", "xl"],
+      "avoid_fixed_width": true
+    },
+
+    "layout": {
+      "prefer_flex_grid": true,
+      "no_absolute_layouts": true,
+      "safe_area_padding": true
+    },
+
+    "accessibility": {
+      "aria_required": true,
+      "semantic_html": true,
+      "keyboard_navigation": true
+    },
+
+    "performance": {
+      "avoid_unnecessary_rerenders": true,
+      "prefer_css_over_js_animation": true,
+      "lazy_load_images": true
+    }
+  },
+
+  "framework_preferences": {
+    "react": {
+      "functional_components_only": true,
+      "hooks_over_classes": true
+    },
+    "css": {
+      "prefer_tailwind": true,
+      "no_inline_styles": true
+    }
+  },
+
+  "typescript": {
+    "strict": true,
+    "no_any": true,
+    "prefer_interfaces": true
   }
 }
